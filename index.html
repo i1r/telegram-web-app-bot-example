@@ -395,7 +395,8 @@
         buttonRootId: 'ton-connect'
       });
     </script>
-    <button onclick="DemoApp.disableVerticalSwipes(); console.log(DemoApp.isVerticalSwipesEnabled)">Stop
+    <button
+      onclick="window.Telegram.WebApp.disableVerticalSwipes(); console.log(window.Telegram.WebApp.isVerticalSwipesEnabled)">Stop
       scrolling</button>
     <button id="main_btn" onclick="DemoApp.sendMessage('');">Send «Hello, World!»</button>
     <button id="with_webview_btn" onclick="DemoApp.sendMessage('', true);">Send «Hello, World!» with inline webview
