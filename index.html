@@ -33,12 +33,7 @@
       console.error("Error connecting to wallet:", error);
     });
   </script>
-  <script>
-    const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
-      manifestUrl: 'https://i1r.github.io/telegram-web-app-bot-example/manifest.json',
-      buttonRootId: 'ton-connect'
-    });
-  </script>
+
   <title></title>
   <style>
     body {
@@ -392,6 +387,12 @@
 <body class="" style="visibility: hidden;">
   <section id="top_sect" class="second">
     <div id="ton-connect">Ton Connect</div>
+    <script>
+      const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
+        manifestUrl: 'https://i1r.github.io/telegram-web-app-bot-example/manifest.json',
+        buttonRootId: 'ton-connect'
+      });
+    </script>
     <button id="main_btn" onclick="DemoApp.sendMessage('');">Send «Hello, World!»</button>
     <button id="with_webview_btn" onclick="DemoApp.sendMessage('', true);">Send «Hello, World!» with inline webview
       button</button>
